@@ -1,9 +1,9 @@
 import express from "express";
-import db from ".dbConnect.js"
-import routes from ".index.js";
+import db from "./config/dbConnect"
+import routes from "./routes/index.js";
 import cors from "cors";
-import manipulador404 from ".manipulador404.js";
-import manipuladorDeErros from ".manipulador404.js";
+import manipulador404 from "./middlewares/manipulador404.js";
+import manipuladorDeErros from "./middlewares/manipuladorDeErros.js";
 
 db.on("error", console.log.bind(console, "Erro de conexão"))
 db.once("open", () => {
