@@ -1,11 +1,8 @@
-import "dotenv/config"
-import app from '/app.js'
+import "dotenv/config";
+import app from "./app.js"; // <<--- CORREÇÃO AQUI
 
-
-console.log("CWD:", process.cwd());
 const port = process.env.PORT || 8000;
 
-
 app.listen(port, () => {
-  console.log(`Servidor escutando em http://localhost:${port}`)
-})
+  console.log(`Servidor escutando em http://localhost:${port}`);
+});
