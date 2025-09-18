@@ -1,7 +1,7 @@
 import express from "express";
 import AnimalController from "../controllers/AnimaisController.js"; // relativo a routes
-import upload from "..middlewares/upload.js";
-import paginar from "..middlewares/paginar.js";
+import upload from "../middlewares/upload.js";
+import paginar from "../middlewares/paginar.js";
 
 const router = express.Router();
 
