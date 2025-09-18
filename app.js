@@ -1,5 +1,5 @@
 import express from "express";
-import db from "./config/dbConnect"
+import db from "./config/dbConnect.js"
 import routes from "./routes/index.js";
 import cors from "cors";
 import manipulador404 from "./middlewares/manipulador404.js";
